@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title>Saksham Lamba - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
@@ -20,7 +21,73 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
+            <div class="header-text">
+                <p>Computer Science Student</p>
+                <h1>Hi, I'm <span>Saksham Lamba</span><br>from New Delhi, India</h1>
+            </div>
         </div>
     </div>
+    <!-----About----->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a second-year student pursuing a degree in Computer Science and Engineering 
+                        at SRM Institute of Science and Technology. My passion lies in crafting innovative 
+                        projects, particularly in game development, AIML, and web development. Originally 
+                        from New Delhi, I find enjoyment in reading, gaming, and sports. I am keen on 
+                        collaborating and creating impactful projects. Let's connect on LinkedIn and 
+                        explore opportunities together!</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming</span><br>Developing AI software with Python.</li>
+                                <li><span>Game Development</span><br>Exploring Unity, eager to create immersive gaming experiences.</li>
+                                <li><span>Web Development</span><br>Learning HTML, CSS, and JavaScript to enhance user interfaces and experiences.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Hackathons and Competitions</span><br>Consistently engaged in hackathons and coding competitions, as well as diverse non-technical events.</li>
+                                <li><span>Leadership</span><br>Served as Vice President of the school's Computer Club and Quiz Club, alongside roles in the Student Council. Led organization of multiple interschool and interstate events, spanning online and offline platforms.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022-2026 (present)</span><br>B.Tech in Computer Science and Engineering (9.70 CGPA)<br>SRM Institure of Science and Technology</li>
+                                <li><span>2022</span><br>CBSE Class 12 (91%)<br>Mount St. Mary's School</li>
+                                <li><span>2020</span><br>CBSE Class 10 (90.67%)<br>Mount St. Mary's School</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
 </body>
 </html>
