@@ -14,13 +14,15 @@
         <div class="container">
             <nav>
                 <img src="Images/logo.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Interests</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#interests">Interests</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Computer Science Student</p>
@@ -117,6 +119,85 @@
         </div>
     </div>
 
+    <!-----Portfolio----->
+    <!-- Keep Image size as Width: 920, Height: 1080 -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/Korero.png">
+                    <div class="layer">
+                        <h3>Korero</h3>
+                        <p>Korero is an innovative project using OpenCV, CVZone, Python, TensorFlow, and 
+                            Keras to translate American Sign Language (ASL) into text. It empowers 
+                            individuals with auditory impairments, bridging communication barriers 
+                            and fostering inclusivity.</p>
+                        <a href="https://github.com/lamba44/Korero"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/FlappyBird.png">
+                    <div class="layer">
+                        <h3>Flappy Bird</h3>
+                        <p>Introducing my very first game, born from following a Unity tutorial step 
+                            by step. It's a classic take on the beloved Flappy Bird game, featuring 
+                            simple controls where you press the spacebar to make the bird jump. 
+                            Keep an eye on the top left for your score as you navigate through 
+                            basic challenges. Dive into the fun and nostalgia of this classic 
+                            gaming experience!</p>
+                        <a href="https://github.com/lamba44/FlappyBird"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Misc.png">
+                    <div class="layer">
+                        <h3>Other Projects</h3>
+                        <p>I'm passionate about learning and growing, and I showcase all my 
+                            projects on GitHub, regardless of size or complexity. From small 
+                            experiments to larger endeavors, I'm committed to enhancing my skills 
+                            and exploring new interests. Join me on GitHub to collaborate, learn, 
+                            and be part of a vibrant community that thrives on shared knowledge 
+                            and support. Let's connect and grow together!</p>
+                        <a href="https://github.com/lamba44"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/lamba44" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-----Contact----->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>sakshamlambamonu@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 92059 21604</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/saksham-lamba/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/lamba44"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/lamba_44"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <a href="Images/Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Made by Saksham Lamba</p>
+        </div>
+    </div>
+
     <script>
         var tablinks = document.getElementsByClassName("tab-links")
         var tabcontents = document.getElementsByClassName("tab-contents")
@@ -131,6 +212,39 @@
             event.currentTarget.classList.add("active-link")
             document.getElementById(tabname).classList.add("active-tab")
         }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+
+    </script>
+
+    <script>
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz8TtbqfXNnLiEr6TH7M_vbjaK8gAV1LESuRb7xGLEQAw7LsfoR0ZWCU6GxCblRd500Hw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+
     </script>
 
 </body>
