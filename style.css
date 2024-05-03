@@ -308,6 +308,11 @@ nav ul li a:hover::after{
     flex-basis: 60%;
 }
 
+.contact-right label span{
+    font-size: 25px;
+    font-weight: 500;
+}
+
 .contact-left p{
     color: #fff;
     margin-top: 30px;
