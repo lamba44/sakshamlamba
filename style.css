@@ -17,7 +17,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(14, 17, 17, 0.5), rgba(14, 17, 17, 0.5)), url(Images/background.jpg);
+    background-image: url(Images/backgroundEdited.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -377,9 +377,9 @@ form .btn2{
 }
 
 .copyright{
-    background-image: linear-gradient(rgba(14, 17, 17, 0.5), rgba(14, 17, 17, 0.5)), url(Images/background.jpg);
-    background-size: cover; /* You might need to adjust this */
-    background-position: center; /* You might need to adjust this */
+    background-image: url(Images/backgroundEdited.png);
+    background-size: cover;
+    background-position: center;
     padding: 25px 0;
     text-align: center;
     font-weight: 500;
@@ -395,7 +395,7 @@ nav .fa-solid{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(Images/background.jpg);
+        background-image: url(Images/backgroundEdited.png);
     }
 
     .header-text{
