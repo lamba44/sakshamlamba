@@ -203,11 +203,6 @@ nav ul li a:hover::after{
     color: #000028;
     font-size: 14px;
     margin-top: 20px;
-    display: inline-block;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .interests-list div:hover{
