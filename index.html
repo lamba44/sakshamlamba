@@ -1,253 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saksham Lamba</title>
-    <link rel="icon" type="image/x-icon" href="Images/title.png">   
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/0a1462a1b1.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="Images/logo.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#interests">Interests</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Computer Science Student</p>
-                <h1>Hi, I'm <span>Saksham Lamba</span><br>from New Delhi, India</h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Saksham Lamba</title>
+        <link rel="icon" type="image/x-icon" href="Images/title.png" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script
+            src="https://kit.fontawesome.com/0a1462a1b1.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="Images/logo.png" class="logo" />
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#interests">Interests</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Computer Science Student</p>
+                    <h1>
+                        Hi, I'm <span>Saksham Lamba</span><br />from New Delhi,
+                        India
+                    </h1>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-----About----->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="Images/user.jpg">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>I'm a second-year student pursuing a degree in Computer Science and Engineering 
-                        at SRM Institute of Science and Technology. My passion lies in crafting innovative 
-                        projects, particularly in game development, AIML, and web development. Originally 
-                        from New Delhi, I find enjoyment in reading, gaming, and sports. I am keen on 
-                        collaborating and creating impactful projects. Let's connect on LinkedIn and 
-                        explore opportunities together!</p>
+        <!-----About----->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Images/user.jpg" />
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>
+                            I'm a second-year student pursuing a degree in
+                            Computer Science and Engineering at SRM Institute of
+                            Science and Technology. My passion lies in crafting
+                            innovative projects, particularly in game
+                            development, AIML, and web development. Originally
+                            from New Delhi, I find enjoyment in reading, gaming,
+                            and sports. I am keen on collaborating and creating
+                            impactful projects. Let's connect on LinkedIn and
+                            explore opportunities together!
+                        </p>
 
                         <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p
+                                class="tab-links active-link"
+                                onclick="opentab('skills')"
+                            >
+                                Skills
+                            </p>
+                            <p
+                                class="tab-links"
+                                onclick="opentab('experience')"
+                            >
+                                Experience
+                            </p>
+                            <p class="tab-links" onclick="opentab('education')">
+                                Education
+                            </p>
                         </div>
                         <div class="tab-contents active-tab" id="skills">
                             <ul>
-                                <li><span>Programming</span><br>Developing AI software with Python.</li>
-                                <li><span>Game Development</span><br>Exploring Unity, eager to create immersive gaming experiences.</li>
-                                <li><span>Web Development</span><br>Learning HTML, CSS, and JavaScript to enhance user interfaces and experiences.</li>
+                                <li>
+                                    <span>Programming</span><br />Developing AI
+                                    software with Python.
+                                </li>
+                                <li>
+                                    <span>Game Development</span><br />Exploring
+                                    Unity, eager to create immersive gaming
+                                    experiences.
+                                </li>
+                                <li>
+                                    <span>Web Development</span><br />Learning
+                                    HTML, CSS, and JavaScript to enhance user
+                                    interfaces and experiences.
+                                </li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="experience">
                             <ul>
-                                <li><span>Hackathons and Competitions</span><br>Consistently engaged in hackathons and coding competitions, as well as diverse non-technical events.</li>
-                                <li><span>Leadership</span><br>Served as Vice President of the school's Computer Club and Quiz Club, alongside roles in the Student Council. Led organization of multiple interschool and interstate events, spanning online and offline platforms.</li>
+                                <li>
+                                    <span>Hackathons and Competitions</span
+                                    ><br />Consistently engaged in hackathons
+                                    and coding competitions, as well as diverse
+                                    non-technical events.
+                                </li>
+                                <li>
+                                    <span>Leadership</span><br />Served as Vice
+                                    President of the school's Computer Club and
+                                    Quiz Club, alongside roles in the Student
+                                    Council. Led organization of multiple
+                                    interschool and interstate events, spanning
+                                    online and offline platforms.
+                                </li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="education">
                             <ul>
-                                <li><span>2022-2026 (present)</span><br>B.Tech in Computer Science and Engineering (9.70 CGPA)<br>SRM Institure of Science and Technology</li>
-                                <li><span>2022</span><br>CBSE Class 12 (91%)<br>Mount St. Mary's School</li>
-                                <li><span>2020</span><br>CBSE Class 10 (90.67%)<br>Mount St. Mary's School</li>
+                                <li>
+                                    <span>2022-2026 (present)</span><br />B.Tech
+                                    in Computer Science and Engineering (9.70
+                                    CGPA)<br />SRM Institure of Science and
+                                    Technology
+                                </li>
+                                <li>
+                                    <span>2022</span><br />CBSE Class 12
+                                    (91%)<br />Mount St. Mary's School
+                                </li>
+                                <li>
+                                    <span>2020</span><br />CBSE Class 10
+                                    (90.67%)<br />Mount St. Mary's School
+                                </li>
                             </ul>
                         </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-----My Interests----->
-    <div id="interests">
-        <div class="container">
-            <h1 class="sub-title">My Interests</h1>
-            <div class="interests-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Programming and AIML</h2>
-                    <p>Enthusiastic about programming, especially Python, with a focus 
-                        on creating projects that address real-world challenges. 
-                        Actively participate in hackathons and competitions to gain 
-                        experience and deepen understanding.
-                    </p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-app-store-ios"></i>
-                    <h2>Web and App Development</h2>
-                    <p>Dedicated to crafting user-friendly web and app experiences, 
-                        I merge functionality with creativity to deliver seamless 
-                        interfaces across devices. My focus on accessibility and 
-                        usability ensures enjoyable and intuitive interactions for 
-                        all users.
-                    </p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-gamepad"></i>
-                    <h2>Game Development</h2>
-                    <p>Passionate about game development, driven by a love for 
-                        gaming and a desire to create immersive experiences. As 
-                        a Computer Science student, I aspire to craft captivating 
-                        games for entertainment and relaxation. Currently mastering 
-                        Unity to hone my game development skills.
-                    </p>
-                    <a href="#">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-----Portfolio----->
-    <!-- Keep Image size as Width: 920, Height: 1080 -->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="Images/Korero.png">
-                    <div class="layer">
-                        <h3>Korero</h3>
-                        <p>Korero is an innovative project using OpenCV, CVZone, Python, TensorFlow, and 
-                            Keras to translate American Sign Language (ASL) into text. It empowers 
-                            individuals with auditory impairments, bridging communication barriers 
-                            and fostering inclusivity.</p>
-                        <a href="https://github.com/lamba44/Korero"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="Images/FlappyBird.png">
-                    <div class="layer">
-                        <h3>Flappy Bird</h3>
-                        <p>Introducing my very first game, born from following a Unity tutorial step 
-                            by step. It's a classic take on the beloved Flappy Bird game, featuring 
-                            simple controls where you press the spacebar to make the bird jump. 
-                            Keep an eye on the top left for your score as you navigate through 
-                            basic challenges. Dive into the fun and nostalgia of this classic 
-                            gaming experience!</p>
-                        <a href="https://github.com/lamba44/FlappyBird"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="Images/Misc.png">
-                    <div class="layer">
-                        <h3>Other Projects</h3>
-                        <p>I'm passionate about learning and growing, and I showcase all my 
-                            projects on GitHub, regardless of size or complexity. From small 
-                            experiments to larger endeavors, I'm committed to enhancing my skills 
-                            and exploring new interests. Join me on GitHub to collaborate, learn, 
-                            and be part of a vibrant community that thrives on shared knowledge 
-                            and support. Let's connect and grow together!</p>
-                        <a href="https://github.com/lamba44"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
-            <a href="https://github.com/lamba44" class="btn">See More</a>
         </div>
-    </div>
 
-    <!-----Contact----->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-envelope"></i>sakshamlambamonu@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>+91 92059 21604</p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/saksham-lamba/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/lamba44"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://twitter.com/lamba_44"><i class="fa-brands fa-x-twitter"></i></a>
+        <!-----My Interests----->
+        <div id="interests">
+            <div class="container">
+                <h1 class="sub-title">My Interests</h1>
+                <div class="interests-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Programming and AIML</h2>
+                        <p>
+                            Enthusiastic about programming, especially Python,
+                            with a focus on creating projects that address
+                            real-world challenges. Actively participate in
+                            hackathons and competitions to gain experience and
+                            deepen understanding.
+                        </p>
+                        <a href="#">Learn More</a>
                     </div>
-                    <a href="Images/Resume.pdf" download class="btn btn2">Download Resume</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <label for="name"><span>Name</span></label>
-                        <input id="name" type="text" name="Name" placeholder="Your Name" required>
-                        <label for="email"><span>Email</span></label>
-                        <input id="email "type="email" name="Email" placeholder="Your Email" required>
-                        <label for="message"><span>Message</span></label>
-                        <textarea id="message" name="Message" rows="6" placeholder="Your message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
+                    <div>
+                        <i class="fa-brands fa-app-store-ios"></i>
+                        <h2>Web and App Development</h2>
+                        <p>
+                            Dedicated to crafting user-friendly web and app
+                            experiences, I merge functionality with creativity
+                            to deliver seamless interfaces across devices. My
+                            focus on accessibility and usability ensures
+                            enjoyable and intuitive interactions for all users.
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-gamepad"></i>
+                        <h2>Game Development</h2>
+                        <p>
+                            Passionate about game development, driven by a love
+                            for gaming and a desire to create immersive
+                            experiences. As a Computer Science student, I aspire
+                            to craft captivating games for entertainment and
+                            relaxation. Currently mastering Unity to hone my
+                            game development skills.
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="copyright">
-            <p>Made by Saksham Lamba</p>
+
+        <!-----Portfolio----->
+        <!-- Keep Image size as Width: 920, Height: 1080 -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Images/Korero.png" />
+                        <div class="layer">
+                            <h3>Korero</h3>
+                            <p>
+                                Korero is an innovative project using OpenCV,
+                                CVZone, Python, TensorFlow, and Keras to
+                                translate American Sign Language (ASL) into
+                                text. It empowers individuals with auditory
+                                impairments, bridging communication barriers and
+                                fostering inclusivity.
+                            </p>
+                            <a href="https://github.com/lamba44/Korero"
+                                ><i class="fa-solid fa-up-right-from-square"></i
+                            ></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/FlappyBird.png" />
+                        <div class="layer">
+                            <h3>Flappy Bird</h3>
+                            <p>
+                                Introducing my very first game, born from
+                                following a Unity tutorial step by step. It's a
+                                classic take on the beloved Flappy Bird game,
+                                featuring simple controls where you press the
+                                spacebar to make the bird jump. Keep an eye on
+                                the top left for your score as you navigate
+                                through basic challenges. Dive into the fun and
+                                nostalgia of this classic gaming experience!
+                            </p>
+                            <a href="https://github.com/lamba44/FlappyBird"
+                                ><i class="fa-solid fa-up-right-from-square"></i
+                            ></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/DictionaryGame.png" />
+                        <div class="layer">
+                            <h3>Dictionary Game</h3>
+                            <p>
+                                A fun and interactive web-based game that
+                                challenges users to enter as many valid words as
+                                possible within a selected time limit. The game
+                                interface is designed with a clean and
+                                responsive layout, featuring a sleek design
+                                using the Poppins font. Players can choose from
+                                different timer durations, enter words, and see
+                                their score updated in real-time. The project
+                                integrates Google Analytics for tracking user
+                                engagement and Firebase for streamlined app
+                                configuration and analytics.
+                            </p>
+                            <a href="https://mydictionarygame.web.app/"
+                                ><i class="fa-solid fa-up-right-from-square"></i
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/lamba44" class="btn">See More</a>
+            </div>
         </div>
-    </div>
 
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links")
-        var tabcontents = document.getElementsByClassName("tab-contents")
+        <!-----Contact----->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p>
+                            <i class="fa-solid fa-envelope"></i
+                            >sakshamlambamonu@gmail.com
+                        </p>
+                        <p><i class="fa-solid fa-phone"></i>+91 92059 21604</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/saksham-lamba/"
+                                ><i class="fa-brands fa-linkedin"></i
+                            ></a>
+                            <a href="https://github.com/lamba44"
+                                ><i class="fa-brands fa-github"></i
+                            ></a>
+                            <a href="https://twitter.com/lamba_44"
+                                ><i class="fa-brands fa-x-twitter"></i
+                            ></a>
+                        </div>
+                        <a href="Images/Resume.pdf" download class="btn btn2"
+                            >Download Resume</a
+                        >
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <label for="name"><span>Name</span></label>
+                            <input
+                                id="name"
+                                type="text"
+                                name="Name"
+                                placeholder="Your Name"
+                                required
+                            />
+                            <label for="email"><span>Email</span></label>
+                            <input
+                                id="email "
+                                type="email"
+                                name="Email"
+                                placeholder="Your Email"
+                                required
+                            />
+                            <label for="message"><span>Message</span></label>
+                            <textarea
+                                id="message"
+                                name="Message"
+                                rows="6"
+                                placeholder="Your message"
+                            ></textarea>
+                            <button type="submit" class="btn btn2">
+                                Submit
+                            </button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Made by Saksham Lamba</p>
+            </div>
+        </div>
 
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link")
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
             }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab")
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemenu.style.right = "0";
             }
-            event.currentTarget.classList.add("active-link")
-            document.getElementById(tabname).classList.add("active-tab")
-        }
-    </script>
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+        </script>
 
-    <script>
-        var sidemenu = document.getElementById("sidemenu")
+        <script>
+            const scriptURL =
+                "https://script.google.com/macros/s/AKfycbz8TtbqfXNnLiEr6TH7M_vbjaK8gAV1LESuRb7xGLEQAw7LsfoR0ZWCU6GxCblRd500Hw/exec";
+            const form = document.forms["submit-to-google-sheet"];
+            const msg = document.getElementById("msg");
 
-        function openmenu(){
-            sidemenu.style.right = "0"
-        }
-        function closemenu(){
-            sidemenu.style.right = "-200px"
-        }
-
-    </script>
-
-    <script>
-
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbz8TtbqfXNnLiEr6TH7M_vbjaK8gAV1LESuRb7xGLEQAw7LsfoR0ZWCU6GxCblRd500Hw/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Message Sent Successfully!"
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-
-    </script>
-
-</body>
+            form.addEventListener("submit", (e) => {
+                e.preventDefault();
+                fetch(scriptURL, { method: "POST", body: new FormData(form) })
+                    .then((response) => {
+                        msg.innerHTML = "Message Sent Successfully!";
+                        setTimeout(function () {
+                            msg.innerHTML = "";
+                        }, 5000);
+                        form.reset();
+                    })
+                    .catch((error) => console.error("Error!", error.message));
+            });
+        </script>
+    </body>
 </html>
