@@ -5,7 +5,7 @@ Welcome to my portfolio website! This website showcases my projects, interests, 
 
 ## About Me
 
-I'm Saksham Lamba, a second-year student pursuing a degree in Computer Science and Engineering at SRM Institute of Science and Technology. My passion lies in crafting innovative projects, particularly in game development, AIML, and web development. Originally from New Delhi, India, I find enjoyment in reading, gaming, and sports. I am keen on collaborating and creating impactful projects.
+I'm Saksham Lamba, a third-year student pursuing a degree in Computer Science and Engineering at SRM Institute of Science and Technology. My passion lies in crafting innovative projects, particularly in game development, AIML, and web development. Originally from New Delhi, India, I find enjoyment in reading, gaming, and sports. I am keen on collaborating and creating impactful projects.
 
 ## Features
 
